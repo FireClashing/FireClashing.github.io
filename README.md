@@ -10,7 +10,7 @@
 
 <img src="assets/FireClashing.png" alt="Neon green cyberpunk city banner" width="100%" />
 
-# `FireClashing.exe`
+
 
 ### `CYBERSECURITY • DEVELOPMENT • CONTINUOUS LEARNING`
 
