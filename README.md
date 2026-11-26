@@ -8,7 +8,7 @@
 
 <div align="center">
 
-<img src="assets/cyberpunk-banner.png" alt="Neon green cyberpunk city banner" width="100%" />
+<img src="assets/FireClashing.png" alt="Neon green cyberpunk city banner" width="100%" />
 
 # `FireClashing.exe`
 
