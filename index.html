@@ -148,7 +148,6 @@ footer .links{display:flex;gap:20px;justify-content:center;margin-bottom:10px;fl
 
 <section id="certs"><div class="wrap">
   <h2>Certificates &amp; achievements</h2>
-  <p class="sub">Click any card to open it full size. PDFs open in a built-in viewer.</p>
   <div class="filters" id="filters"></div>
   <div class="grid" id="certGrid"></div>
 </div></section>
@@ -188,14 +187,14 @@ const SKILLS = [
   { name: "Privilege escalation",       level: 30 },
   { name: "Active Directory attacks",   level: 10 },
   { name: "Reverse Eng.",               level: 60 },
-  { name: "Post-exploitation & C2",     level: 35 },
+  { name: "Post-exploitation",          level: 35 },
   { name: "Evasion & payload basics",   level: 30 },
   { name: "Web pentesting",             level: 70 }
 ];
 // team: "red" = offensive, "blue" = defensive/analysis. Add blue tools here too (e.g. Splunk, Wazuh, Snort).
 const TOOLS = [
-  {name:"Nmap",team:"red"},{name:"Burp Suite",team:"red"},{name:"Metasploit",team:"red"},{name:"BloodHound",team:"red"},
-  {name:"Impacket",team:"red"},{name:"Hydra",team:"red"},{name:"Gobuster",team:"red"},{name:"SQLmap",team:"red"},
+  {name:"Nmap",team:"red"},{name:"Burp Suite",team:"red"},{name:"Curl",team:"red"},
+  ,{name:"Hydra",team:"red"},{name:"Gobuster",team:"red"},{name:"SQLmap",team:"red"},
   {name:"John / Hashcat",team:"red"},{name:"Arch Linux",team:"red"},{name:"Wireshark",team:"blue"},
   {name:"Python",team:"red"},{name:"Bash",team:"red"}
 ];
@@ -205,7 +204,7 @@ const TOOLS = [
 const CERTS = [
   { title: "TRY HACK ME", issuer: "TryHackMe", year: 2026, file: "certificates/pre-SecurityTHM.jpg", type: "jpg", category: "Security" },
   { title: "TRY HACK ME", issuer: "TryHackMe", year: 2026, file: "certificates/Cyber-Security 101.jpg", type: "jpg", category: "Security" },
-  { title: "Code Auction", issuer: "IEEE GTB4CEC", year: 2026, file: "certificates/CODE-auction.jpg", type: "jpg", category: "Security" },
+  { title: "Code Auction", issuer: "IEEE GTB4CEC", year: 2026, file: "certificates/CODE-auction.jpg", type: "jpg", category: "Coding" },
   { title: "NX-BLACKOUT_CTF", issuer: "NEXPLOIT", year: 2026, file: "certificates/NX-BLACKOUT_ctf.jpg", type: "jpg", category: "Security" },
   { title: "SLAY_CTF", issuer: "Jalpaiguri government engineering college", year: 2026, file: "certificates/slay_ctf.jpg", type: "jpg", category: "Security" }
   
