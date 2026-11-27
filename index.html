@@ -104,6 +104,56 @@ footer .links{display:flex;gap:20px;justify-content:center;margin-bottom:10px;fl
 </style>
 </head>
 <body>
+    
+<style>
+  * {
+    cursor: none !important;
+  }
+
+  .crosshair {
+    position: fixed;
+    background: #00ffff;
+    pointer-events: none;
+    z-index: 999999;
+    opacity: 1;
+    box-shadow: 0 0 10px #00ffff;
+  }
+
+  #horizontal {
+    height: 3px;
+    width: 100vw;
+    left: 0;
+  }
+
+  #vertical {
+    width: 3px;
+    height: 100vh;
+    top: 0;
+  }
+
+  @media (hover: none) {
+    .crosshair {
+      display: none;
+    }
+    * {
+      cursor: auto !important;
+    }
+  }
+</style>
+
+<div id="horizontal" class="crosshair"></div>
+<div id="vertical" class="crosshair"></div>
+
+<script>
+  const horizontal = document.getElementById("horizontal");
+  const vertical = document.getElementById("vertical");
+
+  document.addEventListener("mousemove", (e) => {
+    horizontal.style.top = e.clientY + "px";
+    vertical.style.left = e.clientX + "px";
+  });
+</script>
+
 
 <nav><div class="wrap">
   <b>FireClashing</b>
